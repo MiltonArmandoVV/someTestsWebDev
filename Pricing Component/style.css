@@ -1,0 +1,81 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    flex-direction: column; 
+    align-items: center;
+    min-height: 100vh;
+}
+
+.pricing-component {
+    padding-top: 5rem;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 4rem;
+    width: 70vw;
+}
+
+.card{
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    background-color: rgb(190, 190, 190);
+    padding: 2rem;
+    width: 100%;
+    border-radius: .4rem;
+    box-shadow: 0 .2rem .5rem black;
+    transition: ease-in-out 400ms;
+}
+
+.features {
+    padding-top: 1rem;
+    list-style: none; 
+}
+
+.price{
+    margin-top: 1rem;
+    font-size: 1.5rem;
+}
+
+.buy-button {
+    margin-top: 1rem;
+    background-color: rgb(55, 230, 55);
+    border: none;
+    border-radius: 1rem;
+    width: 40%;
+    padding: .2rem;
+    box-shadow: 0 .2rem .5rem black;
+    transition: ease-in-out 400ms;
+}
+
+.card:hover{
+    transform: scale(1.01);
+}
+
+.buy-button:hover {
+    transform: scale(1.1);
+}
+
+
+@media (min-width: 768px) {
+.pricing-component {
+    flex-direction: row;
+    width: 95vw;
+    justify-content: space-around;
+    align-content: center;
+    padding-top: 0;
+}
+
+.card{
+    width: 20%;
+}
+}
+
+
+
